@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#heading {
+    font-family: 'Gill Sans MT';
+}
+
+#container {
+    height: 500px;
+    width: 400px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    grid-template-rows: repeat(6, 1fr);
+    border: 4px double white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.box {
+    height: 62px;
+    width: 85px;
+    border: 1px solid black;
+    background-color: #ffffff;
+    border-radius: 20%;
+    font-size: 45px;
+    font-weight: 500;
+    font-family: cursive, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px 1px 2px 2px;
+}
+
+#output-box {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 4px double white;
+    grid-column: 1/5;
+    grid-row: 1;
+    font-size: 50px;
+    text-align: right;
+    color: white;
+    font-family: cursive;
+    font-weight: 600;
+    box-sizing: border-box;
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+
+.box:hover {
+    background-color: rgb(228, 216, 216);
+}
+
+.imp{
+  height: 70px;
+  width: 90px;
+  background-color: rgb(255, 225, 185);
+}
+
+@keyframes anima{
+    0% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+body{
+    background: linear-gradient(90deg, 
+    red, orange, yellow, green, blue, indigo, violet, 
+    pink, lightblue, lightgreen, yellow, orange, red, purple, 
+    purple, red, orange, yellow, lightgreen, lightblue, pink, 
+    lightcoral, lightsalmon, gold, lightgreen, lightseagreen, deepskyblue, mediumslateblue, 
+    turquoise, lightseagreen, mediumseagreen, mediumaquamarine, lightcyan, lavender, plum, 
+    coral, tomato, orange, gold, yellowgreen, palegreen, aquamarine, 
+    skyblue, dodgerblue, deepskyblue, mediumblue, blue, darkblue, navy, 
+    plum, orchid, mediumorchid, darkorchid, purple, rebeccapurple, indigo, 
+    slateblue, mediumslateblue, darkslateblue, mediumvioletred, deeppink, hotpink, palevioletred, 
+    darkorange, chocolate, peru, darkgoldenrod, goldenrod, darkkhaki, khaki, 
+    sienna, saddlebrown, maroon, brown, firebrick, crimson, red, 
+    lime, limegreen, forestgreen, green, seagreen, mediumseagreen, lightgreen, 
+    darkred, firebrick, red, orangered, darkorange, orange, yellow, 
+    navy, darkblue, blue, mediumblue, dodgerblue, deepskyblue, skyblue);
+background-size: 400% 400%;
+
+box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 165, 0, 0.7), 0 0 40px rgba(255, 255, 0, 0.7);
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+.animated{
+    animation: anima 30s infinite linear;
+}
+
+#clean{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+footer{
+    height: 50px;
+    width: 500px;
+    font-family: 'Gill Sans MT';
+    font-size: larger;
+    color: #ffffff;
+    background-color:#34495e ;
+    border: 5px double white;
+    margin-top: 20px;
+    border-radius:10px;
+}
+
+@media (max-width:400px) {
+    #container {
+        height: 500px;
+        width: 320px;
+        background-color: blue;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        grid-template-rows: repeat(6, 1fr);
+        border: 4px double white;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .box {
+        height: 45px;
+        width: 65px;
+        border: 1px solid black;
+        background-color: #ffffff;
+        border-radius: 20%;
+        font-size: 35px;
+        font-weight: 500;
+        font-family: cursive, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0px 1px 2px 2px;
+    }
+    
+    #clean{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .imp{
+        height: 55px;
+        width: 70px;
+        background-color: rgb(255, 225, 185);
+      }
+      .box:active {
+        background-color: rgb(232, 58, 0);
+    }
+    footer{
+        width: 350px;
+        height: 70px;
+    }
+}
